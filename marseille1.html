@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/61f9cf1cf0.js" crossorigin="anonymous"></script>
+        <script src="./onScrollEvent.js"></script>
+        <link rel="stylesheet" href="styles-home.css">
+        <link rel="stylesheet" href="marseille1.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Marseille, La cité Phocéenne</title>
+    </head>
+    <body>
+        <input type="checkbox" name="resp-nav" id="drop-down" hidden>
+        <input type="checkbox" name="resp-nav" id="drop-down_contact" hidden>
+        <div id="wrapper">
+            <div id="presentation">
+                <video autoplay loop muted><source src="videos-src/marseille.mp4"></video>
+                <h1>Marseille</h1>
+            </div>
+            <div id="histoire"></div>
+            <div id="musées"></div>
+            <div id="parcs"></div>
+            <div id="plages"></div>
+            <div id="randonnées"></div>
+        </div>
+        <header>
+            <div id="logo">
+                <a href="marseille1.html"><img id="marseille-logo" src="images-src/blason-marseille.png" alt="marseille-logo"></a>
+                <h1>Marseille</h1>
+            </div>
+            <nav id="navigation">
+                <a href="marseille2.html">Histoire</a>
+                <a href="marseille3.html">Musées</a>
+                <a href="marseille4.html">Parcs</a>
+                <a href="marseille5.html">Plages</a>
+                <a href="marseille6.html">Randonnées</a>
+                <div class="dropdown">
+                    <a id="desktop-nav" href="contact.html">Contact</a>
+                    <ul>
+                        <a href="https://github.com/livio-gonzalez-luna" target="_blank">GONZALEZ-LUNA Livio</a>
+                        <a href="https://github.com/marine-halladj" target="_blank">HALLADJ Marine</a>
+                        <a href="https://github.com/jacques-solkaryan" target="_blank">SOLKARYAN Jacques</a>
+                        <a href="https://github.com/PELAGIE-AINTANGAR" target="_blank">AINTANGAR Pelagie</a>
+                        <a href="https://github.com/pelayo-joel" target="_blank">PELAYO Joël</a>
+                        <a href="https://github.com/maxime-chabaud" target="_blank">CHABAUD Maxime</a>
+                    </ul>
+                </div>
+            </nav>
+            <label for="drop-down"><i class="fa-solid fa-chevron-down"></i></label>
+        </header>
+        <nav id="resp-navigation">
+            <a href="marseille2.html">Histoire</a>
+            <a href="marseille3.html">Musées</a>
+            <a href="marseille4.html">Parcs</a>
+            <a href="marseille5.html">Plages</a>
+            <a href="marseille6.html">Randonnées</a>
+            <div class="resp-dropdown">
+                <label for="drop-down_contact"><i class="fa-solid fa-chevron-down"></i></label>
+                <ul>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://github.com/livio-gonzalez-luna" target="_blank">GONZALEZ-LUNA Livio</a>
+                    <a href="https://github.com/marine-halladj" target="_blank">HALLADJ Marine</a>
+                    <a href="https://github.com/jacques-solkaryan" target="_blank">SOLKARYAN Jacques</a>
+                    <a href="https://github.com/PELAGIE-AINTANGAR" target="_blank">AINTANGAR Pelagie</a>
+                    <a href="https://github.com/pelayo-joel" target="_blank">PELAYO Joël</a>
+                    <a href="https://github.com/maxime-chabaud" target="_blank">CHABAUD Maxime</a>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <nav id="home-nav">
+                <input type="checkbox" name="home-nav_menu" id="home-nav-display_menu" hidden>
+                <label for="home-nav-display_menu"><i class="fa-solid fa-bars"></i></label>
+                <menu>
+                    <a href="#wrapper"><i class="fa-solid fa-house"></i></a>
+                    <a href="#presentation-histoire"><i class="fa-solid fa-scroll"></i></a>
+                    <a href="#presentation-musees"><i class="fa-solid fa-building-columns"></i></a>
+                    <a href="#presentation-parcs"><i class="fa-solid fa-tree"></i></a>
+                    <a href="#presentation-plages"><i class="fa-solid fa-umbrella-beach"></i></a>
+                    <a href="#presentation-randonnees"><i class="fa-solid fa-person-hiking"></i></a>
+                </menu>
+            </nav>
+            <section class="content" id="accueil">
+                <article>
+                    <input type="radio" name="top-home-nav" id="top-home-nav_park" hidden>
+                    <input type="radio" name="top-home-nav" id="top-home-nav_museum" hidden>
+                    <input type="radio" name="top-home-nav" id="top-home-nav_history" hidden>
+                    <input type="radio" name="top-home-nav" id="top-home-nav_beach" hidden>
+                    <input type="radio" name="top-home-nav" id="top-home-nav_hiking" hidden>
+                    <input type="radio" name="top-home-nav" id="top-home-nav_hide" hidden>
+                    <div id="home-cards">
+                        <label for="top-home-nav_park">
+                            <a href="#presentation-parcs"><i class="fa-solid fa-caret-down"></i></a>
+                            <h5>Parcs</h5>
+                            <p>Marseille possède de nombreux parcs à découvrir</p>
+                            <img src="images-src/longchamp.jpg" alt="palais longchamp">
+                        </label>
+                        <label for="top-home-nav_museum">
+                            <a href="#presentation-musees"><i class="fa-solid fa-caret-down"></i></a>
+                            <h5>Musées</h5>
+                            <p>De nombreux musées sont à visiter à Marseille</p>
+                            <img src="images-src/mba.jpg" alt="le musée des beaux arts">
+                        </label>
+                        <label for="top-home-nav_history">
+                            <a href="#presentation-histoire"><i class="fa-solid fa-caret-down"></i></a>
+                            <h5>Histoire</h5>
+                            <p>La cité phocéenne à 2600 ans d'histoire à partager ainsi que de nombreux monuments</p>
+                            <img src="images-src/histoire-tab.jpg" alt="histoire de marseille">
+                        </label>
+                        <label for="top-home-nav_beach">
+                            <a href="#presentation-plages"><i class="fa-solid fa-caret-down"></i></a>
+                            <h5>Plages</h5>
+                            <p>Découvrez les nombreuses plages merveilleuses de Marseille</p>
+                            <img src="images-src/plages.jpg" alt="plage cassi">
+                        </label>
+                        <label for="top-home-nav_hiking">
+                            <a href="#presentation-randonnees"><i class="fa-solid fa-caret-down"></i></a>
+                            <h5>Randonnées</h5>
+                            <p>Des randonnées aux vues époustouflantes sont à faire</p>
+                            <img src="images-src/randonnées-tab.jpg" alt="randonnées à marseille">
+                        </label>
+                    </div>
+                    <label for="top-home-nav_hide"><p><i class="fa-solid fa-minus"></i></p></label>
+                    <!--<h1>Découvrez Marseille la cité phocéenne</h1>-->
+                </article>
+            </section>
+            <section class="content" id="presentation-histoire">
+                <article id="content-histoire">
+                    <div id="histoire-text">
+                        <h1>Histoire</h1>
+                        <p>La cité phocéenne tire son nom de son histoire, en effet Marseillle fût créer il y a de cela maintenant 2600 ans par des marins grecs de phocée.</p>
+                        <p>Retracer ses 2600 ans d'histoires grâce à ses nombreux monuments, de sa création jusqu'à aujourd'hui.</p>
+                        <a href="marseille2.html">Plus de détails <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <input type="radio" name="radio-button" id="radio-1" hidden>
+                    <input type="radio" name="radio-button" id="radio-2" hidden checked>
+                    <input type="radio" name="radio-button" id="radio-3" hidden>
+                    <div id="histoire-tab">
+                        <div id="radio-history">
+                            <label for="radio-1"></label>
+                            <label for="radio-2"></label>
+                            <label for="radio-3"></label>
+                        </div>
+                        <div id="radio-img">
+                            <img src="images-src/hitsoire-notre-dame.png" alt="notre-dame à l'époque">
+                            <img src="images-src/cathédral-major.png" alt="cathédral major">
+                            <img src="images-src/porte-aix.png" alt="la porte d'aix">
+                        </div>
+                        <div id="radio-desc">
+                            <p>Notre-Dame-de-la-Garde</p>
+                            <p>Cathédral de la MAJOR</p>
+                            <p>Porte d'Aix</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="content" id="presentation-musees">
+                <input type="radio" name="bg-for-museum" id="bg-musees-1" hidden checked>
+                <input type="radio" name="bg-for-museum" id="bg-musees-2" hidden>
+                <input type="radio" name="bg-for-museum" id="bg-musees-3" hidden>
+                <article id="content-musees">
+                    <div id="musees-bg">
+                        <label for="bg-musees-1"><img src="images-src/mucem.jpg" alt="le mucem"></label>
+                        <label for="bg-musees-2"><img src="images-src/mac.jpg" alt="le mac"></label>
+                        <label for="bg-musees-3"><img src="images-src/mba.jpg" alt="musée des beaux arts"></label>
+                        <div id="resp-musees">
+                            <img src="images-src/mucem.jpg" alt="le mucem">
+                            <img src="images-src/mac.jpg" alt="le mac">
+                            <img src="images-src/mba.jpg" alt="musée des beaux arts">
+                        </div>
+                    </div>
+                    <div id="musees-desc">
+                        <h1>Musées</h1>
+                        <p>Marseille ayant une très grande histoire, elle possède de très nombreux musées qui sont à visiter afin de mieux connaître celle-ci.</p>
+                        <p>Du Mucem au musée des Beaux Arts ou encore le musée des motos, venez découvrir les reliques que Marseille abrite.</p>
+                        <a href="marseille3.html">Plus de détails <i class="fa-solid fa-angles-right"></i></a>
+                        <img src="images-src/vieille-charité.webp" alt="la vieille charité">
+                    </div>
+                </article>
+            </section>
+            <section class="content" id="presentation-parcs">
+                <article id="content-parcs">
+                    <input type="radio" name="carousel-parcs" id="parcs-1" hidden checked>
+                    <input type="radio" name="carousel-parcs" id="parcs-2" hidden>
+                    <input type="radio" name="carousel-parcs" id="parcs-3" hidden>
+                    <div id="carousel-container">
+                        <ul>
+                            <li>
+                                <div class="parcs-desc">
+                                    <h3>Palais Longchamp</h3>
+                                    <p>Protégé au titre des monuments historiques, le parc Longchamp s'est constitué au fil du temps, par la stratification des différents projets, imaginés ou réalisés sur le site, depuis le XIXe siècle.</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> 32 Bd Jard. Zoologique, 13004 Marseille</p>
+                                </div>
+                                <img src="images-src/longchamp.jpg" alt="palais longchamp">
+                            </li>
+                            <li>
+                                <div class="parcs-desc">
+                                    <h3>Parc du 26ème Centenaire</h3>
+                                    <p>Situé en plein cœur de Marseille, le Parc du 26e centenaire s’étend sur 10,5 hectares. Il a été aménagé sur le site de l'ancienne gare du Prado.
+                                        Lorsqu’en 1998, la Ville de Marseille achète le terrain à la SNCF, il y a longtemps que la gare ne sert plus qu’à la formation des trains transportant les ordures ménagères vers la décharge d’Entressen.</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> Place Zino Francescatti, 13010 Marseille</p>
+                                </div>
+                                <img src="images-src/parc-centenaire.png" alt="parc 26ème centenaire">
+                            </li>
+                            <li>
+                                <div class="parcs-desc">
+                                    <h3>Parc de la Magalone</h3>
+                                    <p>Au cœur du très chic boulevard Michelet se cache le Jardin de la Magalone. C’est ce genre de lieux que les habitants du coin essaient tant bien que mal de garder secret sans pouvoir pour autant résister au fait de le partager. </p>
+                                    <p><i class="fa-solid fa-location-dot"></i> 245 Bd Michelet, 13009 Marseille</p>
+                                </div>
+                                <img src="images-src/Villa-Magalone.jfif" alt="parc magalone">
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <label for="parcs-1"><img src="images-src/longchamp.jpg" alt="palais longchamp"></label>
+                        <label for="parcs-2"><img src="images-src/parc-centenaire.png" alt="parc 26ème centenaire"></label>
+                        <label for="parcs-3"><img src="images-src/Villa-Magalone.jfif" alt="parc magalone"></label>
+                    </ul>
+                    <a href="marseille4.html">Plus de détails <i class="fa-solid fa-angles-right"></i></a>
+                </article>
+            </section>
+            <section class="content" id="presentation-plages">
+                <input type="radio" name="bg-for-beach" id="bg-plages-1" hidden>
+                <input type="radio" name="bg-for-beach" id="bg-plages-2" hidden checked>
+                <input type="radio" name="bg-for-beach" id="bg-plages-3" hidden>
+                <article id="content-plages">
+                    <div id="plages-desc">
+                        <h1>Plages</h1>
+                        <p>La ville dispose de plusieurs endroits parfaits pour les baignades en famille, en solo ou entre amis.</p>
+                        <p>Marseille étant en bord de mer, ses nombreuses plages sauront vous émerveiller. Entre la plage du Prado, celles des calanques ou encore d'autres moins connu, profiter des plages qu'elle propose.</p>
+                        <a href="marseille5.html">Plus de détails <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                    <div id="plages-bg">
+                        <label for="bg-plages-1"><img src="images-src/plages-prado.jpg" alt="plages du prado"></label>
+                        <label for="bg-plages-2"><img src="images-src/plage-cassis.jpg" alt="plages cassis"></label>
+                        <label for="bg-plages-3"><img src="images-src/plage-calanque.jpg" alt="plage calanque"></label>
+                        <div id="resp-plages">
+                            <img src="images-src/plages-prado.jpg" alt="plages du prado">
+                            <img src="images-src/plage-cassis.jpg" alt="plage cassis">
+                            <img src="images-src/plage-calanque.jpg" alt="plage calanque">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="content" id="presentation-randonnees">
+                <article id="content-rando">
+                    <h2>Randonnées</h2>
+                    <p>En plus de ses merveilleuses plages, Marseille est entourée de magnifiques montagnes à explorer.</p>
+                    <p>De Luminy à Cassis ou bien encore du côté de Marseilleveyre, venez explorer les calanques de Marseille.</p>
+                    <a href="marseille6.html"><i class="fa-solid fa-angles-left"></i> Plus de détails</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <div id="footer-logo">
+                    <img src="images-src/logo-ville-de-Marseille.png" alt="ville de marseille">
+                    <img src="images-src/blason-marseille.png" alt="marseille-logo">
+                    <img src="images-src/allez-l'om.svg" alt="allez l'om">
+                </div>
+                <h1>Ville de Marseille</h1>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/villemarseille/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/marseilleville/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/marseille" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/VilledeMarseille?themeRefresh=1" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+            </section>
+            <section id="links">
+                <a href="marseille1.html"><h2>Marseille</h2></a>
+                <a href="marseille2.html">Histoire</a>
+                <a href="marseille3.html">Musées</a>
+                <a href="marseille4.html">Parcs</a>
+                <a href="marseille5.html">Plages</a>
+                <a href="marseille6.html">Randonnées</a>
+            </section>
+            <section id="links">
+                <a href="contact.html"><h2>Contact</h2></a>
+                <a href="https://github.com/livio-gonzalez-luna" target="_blank">GONZALEZ-LUNA Livio</a>
+                <a href="https://github.com/marine-halladj" target="_blank">HALLADJ Marine</a>
+                <a href="https://github.com/jacques-solkaryan" target="_blank">SOLKARYAN Jacques</a>
+                <a href="https://github.com/PELAGIE-AINTANGAR" target="_blank">AINTANGAR Pelagie</a>
+                <a href="https://github.com/pelayo-joel" target="_blank">PELAYO Joël</a>
+                <a href="https://github.com/maxime-chabaud" target="_blank">CHABAUD Maxime</a>
+            </section>
+        </footer>
+    </body>
+</html>

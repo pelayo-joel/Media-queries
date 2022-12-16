@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --massalia-color:#20AAE7;
+}
+
+html {
+    height: 100%;
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: 12vh;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+    z-index: 10;
+}
+#logo {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    width: auto;
+}
+        #logo > a {
+            margin: 1em;
+            width: 5vw;
+            position: relative;
+        }
+        #marseille-logo {
+            margin: 5px;
+            object-fit: contain;
+            max-width: 100%;
+            height: auto;
+            transition: 0.5s;
+        }
+        #marseille-logo:hover {
+            scale: 1.15;
+        }
+        #logo > h1 {
+            position: relative;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: auto;
+        }
+        #navigation {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            margin-right: 2em;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            align-items: baseline;
+        }
+        #navigation > a {
+            margin-right: 2em;
+            text-decoration: none;
+            color: white;
+            transition: 0.5s;
+        }
+        #navigation > a:hover {
+            background: white;
+            color: var(--massalia-color);
+            padding: 3vh 1vw;
+        }
+        
+    header > label {
+        display: none;
+        color: white;
+        margin: auto;
+        margin-right: 2em;
+        transition: 0.5s;
+    }
+    #resp-navigation {
+        display: none;
+        border-top: 2px solid white;
+        padding-top: 10px;
+        transform: translateY(-10px);
+        transition: 0.5s;
+        z-index: 10;
+    }
+        #resp-navigation > a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+}
+    footer > section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        margin: 3em;
+        height: auto;
+        width: 35%;
+    }
+    #links {
+        margin-top: 1.5em;
+        width: 15%;
+        border-left: 2px solid dimgray;
+        white-space: nowrap;
+    }
+        footer > section > h1 {
+            font-size: 3vw;
+            margin: 0.2em;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--massalia-color);
+        }
+            #footer-logo {
+                height: 10vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                #footer-logo > img {
+                    object-fit: contain;
+                    height: 100%;
+                    margin-left: 1em;
+                }
+            .social-media {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                .social-media > a {
+                    font-size: 3vw;
+                    margin: 5px;
+                    color: var(--massalia-color);
+                    transition: 0.5s;
+                }
+                .social-media > a:hover {
+                    scale: 1.1;
+                }
+        footer > section > a {
+            text-decoration: none;
+            color: black;
+            margin-top: 0.5em;
+            padding-left: 1em;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.5s;
+        }
+        footer > section > a:hover {
+            color: var(--massalia-color);
+            transform: translateX(10px);
+        }
+
+
+.dropdown > ul {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    background: whitesmoke;
+    position: absolute;
+    list-style-type: none;
+    pointer-events: none;
+    top: 82%;
+    right: 0;
+    transition: 0.5s;
+    padding: 0;
+    transform: translateY(-10px);
+}
+.dropdown > ul > a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    width: 95%;
+    padding: 5px;
+    right: 20px;
+    font-family: inherit;
+}
+.dropdown > ul > a:hover {
+    color: var(--massalia-color);
+    background: rgba(0, 0, 0, 0.3);
+}
+    .dropdown > #desktop-nav {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .dropdown > #desktop-nav:hover {
+        scale: 1.15;
+        background: white;
+        color: var(--massalia-color);
+        padding: 4.5vh 2vw;
+    }
+    .dropdown:hover > a:hover + ul {
+        opacity: 1;
+        transform: translateY(0px);
+        pointer-events: auto;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .dropdown:hover > ul:hover {
+        opacity: 1;
+        transform: translateY(0px);
+        pointer-events: auto;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    #resp-navigation > a:hover {
+        color: var(--massalia-color);
+    }
+    .resp-dropdown > ul {
+        display: none;
+        opacity: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        list-style-type: none;
+        top: 82%;
+        right: 0;
+        padding: 0;
+        width: auto;
+    }
+        .resp-dropdown > label {
+            display: block;
+            color: white;
+        }
+        .resp-dropdown > ul > a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            padding: 3px 3px;
+        }
+        .resp-dropdown > ul > a:hover {
+            color: var(--massalia-color);
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+
+
+
+
+@media screen and (max-width: 940px) {
+    #navigation {
+        display: none;
+    }
+    header > label {
+        display: block;
+    }
+    #drop-down:checked ~ header > label {
+        transform: rotate(180deg);
+    }
+    #drop-down:checked ~ #resp-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transform: translateY(0px);
+    }
+    #drop-down_contact:checked ~ nav > .resp-dropdown > ul {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+    }
+    #drop-down_contact:checked ~ nav > .resp-dropdown > label {
+        transform: rotate(180deg);
+    }
+    #links {
+        width: 5em;
+    }
+}
